@@ -145,7 +145,7 @@ const Hero = ({ theme }: { theme: ColorProps }) => {
       <div className=" w-full h-96 overflow-hidden mt-5">
         <img
           className="w-full h-full object-cover rounded-3xl"
-          src="https://scontent.faae2-3.fna.fbcdn.net/v/t39.30808-6/384127784_228716010195930_2630131328113587474_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=a5f93a&_nc_ohc=wPlWXJRStc0Q7kNvgHkWQTs&_nc_ht=scontent.faae2-3.fna&oh=00_AYAyI9vMkeI-QLE4jSVYkIjrRTasgb1Dl8VY7ZE_F3g4CQ&oe=66CD3062"
+          src="https://cdn.dribbble.com/userupload/16202794/file/original-c13d362eca4b3e9e3c3b723d61d73026.jpg?resize=752x1165"
           alt=""
         />
       </div>
