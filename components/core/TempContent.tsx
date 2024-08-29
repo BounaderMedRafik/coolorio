@@ -5,6 +5,7 @@ import { Check, ChevronDown, Copy, Moon, Sun } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { useGlobalState } from "@/state/ColorState";
 import Portfolio from "../examples/Portfolio";
+import PortfolioDark from "../examples/PortfolioDark";
 
 const TempContent = () => {
   const [temp, setTemp] = useState(templates[0]);
@@ -32,7 +33,7 @@ const TempContent = () => {
             </div>
           </div>
           {open && (
-            <div className="absolute w-[250px] z-20   top-8 rounded-xl p-5 bg-input">
+            <div className="absolute w-[250px] z-20   top-8 rounded-xl p-5 bg-secondary">
               {templates.map((item, i) => {
                 return (
                   <div
@@ -56,7 +57,12 @@ const TempContent = () => {
       <div className="pt-24">
         {temp == "Portfolio" ? (
           <div>
-            <Portfolio theme={theme} />
+            <div className="block dark:hidden">
+              <Portfolio theme={theme} />
+            </div>
+            <div className=" hidden dark:block">
+              <PortfolioDark theme={theme} />
+            </div>
           </div>
         ) : null}
       </div>
@@ -99,7 +105,7 @@ const ColorCoder = () => {
         </div>
 
         {open && (
-          <div className="w-[250px] p-5 bg-input top-8 rounded-xl absolute -translate-x-full left-full ">
+          <div className="w-[250px] p-5 bg-secondary top-8 rounded-xl absolute -translate-x-full left-full ">
             <div className="text-base font-semibold  opacity-75 flex items-center gap-2">
               <div>
                 <Sun size={13} />

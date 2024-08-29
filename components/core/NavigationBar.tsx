@@ -12,7 +12,7 @@ import { setGlobalState, useGlobalState } from "@/state/ColorState";
 
 const NavigationBar = () => {
   return (
-    <div className="wrapper fixed z-50 w-full top-3 -translate-x-1/2 left-1/2 flex items-center justify-between px-3 py-2.5  bg-input rounded-xl">
+    <div className="wrapper fixed z-50 w-full top-3 -translate-x-1/2 left-1/2 flex items-center justify-between px-3 py-2.5  bg-secondary rounded-xl">
       <div>
         <MyLogo />
       </div>
@@ -118,7 +118,7 @@ const ColorChanger = () => {
       </div>
       {open && (
         <div>
-          <div className="p-3 w-full bg-input rounded-xl absolute space-y-1 top-14 z-[60]">
+          <div className="p-3 w-full bg-secondary rounded-xl absolute space-y-1 top-14 z-[60]">
             {navColors
               .filter((item) => item.name != colors.name)
               .map((item, i) => {
