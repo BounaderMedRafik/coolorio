@@ -6,6 +6,8 @@ import { cn } from "@/lib/utils";
 import { useGlobalState } from "@/state/ColorState";
 import Portfolio from "../examples/Portfolio";
 import PortfolioDark from "../examples/PortfolioDark";
+import Authentication from "../examples/Authentication";
+import AuthenticationDark from "../examples/AuthenticationDark";
 
 const TempContent = () => {
   const [temp, setTemp] = useState(templates[0]);
@@ -62,6 +64,15 @@ const TempContent = () => {
             </div>
             <div className=" hidden dark:block">
               <PortfolioDark theme={theme} />
+            </div>
+          </div>
+        ) : temp == "Authentication" ? (
+          <div>
+            <div className="block dark:hidden">
+              <Authentication theme={theme} />
+            </div>
+            <div className=" hidden dark:block">
+              <AuthenticationDark theme={theme} />
             </div>
           </div>
         ) : null}

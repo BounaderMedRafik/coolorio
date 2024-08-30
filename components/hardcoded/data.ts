@@ -60,10 +60,4 @@ export const navColors: ColorProps[] = [
   },
 ];
 
-export const templates = [
-  "Portfolio",
-  "DashBoard",
-  "Business Landing Page",
-  "Crypto Landing Page",
-  "Social Media app",
-];
+export const templates = ["Portfolio", "Authentication"];
