@@ -9,6 +9,7 @@ import { navColors } from "../hardcoded/data";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
 import { setGlobalState, useGlobalState } from "@/state/ColorState";
+import CustomColorChanging from "./CustomColorChanging";
 
 const NavigationBar = () => {
   return (
@@ -22,6 +23,7 @@ const NavigationBar = () => {
         </div>
         <Button>Sign up</Button>
         <ModeToggle />
+        {/* <CustomColorChanging /> */}
       </div>
     </div>
   );

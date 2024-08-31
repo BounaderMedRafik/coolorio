@@ -116,7 +116,7 @@ const ColorCoder = () => {
         </div>
 
         {open && (
-          <div className="w-[250px] p-5 bg-secondary top-8 rounded-xl absolute -translate-x-full left-full ">
+          <div className="w-[250px] p-5 bg-secondary top-8 rounded-xl absolute z-40 -translate-x-full left-full ">
             <div className="text-base font-semibold  opacity-75 flex items-center gap-2">
               <div>
                 <Sun size={13} />
